@@ -1,0 +1,184 @@
+[
+    {
+        "title": "node_modules",
+        "isFolder": true,
+        "content": []
+    },
+    {
+        "title": "public",
+        "isFolder": true,
+        "content": [
+            {
+                "title": "fileFolderStructData.json",
+                "isFolder": false,
+                "content": null
+            }
+        ]
+    },
+    {
+        "title": "src",
+        "isFolder": true,
+        "content": [
+            {
+                "title": "appStore",
+                "isFolder": true,
+                "content": [
+                    {
+                        "title": "store",
+                        "isFolder": true,
+                        "content": [
+                            {
+                                "title": "store.js",
+                                "isFolder": false,
+                                "content": null
+                            }
+                        ]
+                    },
+                    {
+                        "title": "storeFeatures",
+                        "isFolder": true,
+                        "content": [
+                            {
+                                "title": "userSlice.js",
+                                "isFolder": false,
+                                "content": null
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "pages",
+                "isFolder": true,
+                "content": [
+                    {
+                        "title": "footer",
+                        "isFolder": true,
+                        "content": [
+                            {
+                                "title": "Footor.jsx",
+                                "isFolder": false,
+                                "content": null
+                            }
+                        ]
+                    },
+                    {
+                        "title": "header",
+                        "isFolder": true,
+                        "content": [
+                            {
+                                "title": "Header.jsx",
+                                "isFolder": false,
+                                "content": null
+                            }
+                        ]
+                    },
+                    {
+                        "title": "user",
+                        "isFolder": true,
+                        "content": [
+                            {
+                                "title": "User.jsx",
+                                "isFolder": false,
+                                "content": null
+                            }
+                        ]
+                    },
+                    {
+                        "title": "workspace1",
+                        "isFolder": true,
+                        "content": [
+                            {
+                                "title": "ProgressBar.jsx",
+                                "isFolder": false,
+                                "content": null
+                            },
+                            {
+                                "title": "WorkSpace1.jsx",
+                                "isFolder": false,
+                                "content": null
+                            }
+                        ]
+                    },
+                    {
+                        "title": "workspace2",
+                        "isFolder": true,
+                        "content": [
+                            {
+                                "title": "WorkSpace2.jsx",
+                                "isFolder": false,
+                                "content": null
+                            }
+                        ]
+                    },
+                    {
+                        "title": "workspace3",
+                        "isFolder": true,
+                        "content": [
+                            {
+                                "title": "WorkSpace3.jsx",
+                                "isFolder": false,
+                                "content": null
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Home.jsx",
+                "isFolder": false,
+                "content": null
+            },
+            {
+                "title": "index.css",
+                "isFolder": false,
+                "content": null
+            },
+            {
+                "title": "Layout.jsx",
+                "isFolder": false,
+                "content": null
+            },
+            {
+                "title": "main.jsx",
+                "isFolder": false,
+                "content": null
+            }
+        ]
+    },
+    {
+        "title": ".gitignore",
+        "isFolder": false,
+        "content": null
+    },
+    {
+        "title": "eslint.config.js",
+        "isFolder": false,
+        "content": null
+    },
+    {
+        "title": "index.html",
+        "isFolder": false,
+        "content": null
+    },
+    {
+        "title": "package-lock.json",
+        "isFolder": false,
+        "content": null
+    },
+    {
+        "title": "package.json",
+        "isFolder": false,
+        "content": null
+    },
+    {
+        "title": "README.md",
+        "isFolder": false,
+        "content": null
+    },
+    {
+        "title": "vite.config.js",
+        "isFolder": false,
+        "content": null
+    }
+]
