@@ -10,6 +10,7 @@ function Header() {
             <NavLink to='/workspace1' className={({isActive}) => `rounded-xl p-1 cursor-pointer ${isActive ? "text-red-800" : "text-black"}`} > WorkSpace1 </NavLink> 
             <NavLink to='/workspace2' className={({isActive}) => `rounded-xl p-1 cursor-pointer ${isActive ? "text-red-800" : "text-black"}`} > WorkSpace2 </NavLink>
             <NavLink to='/workspace3' className={({isActive}) => `rounded-xl p-1 cursor-pointer ${isActive ? "text-red-800" : "text-black"}`} > WorkSpace3 </NavLink>
+            <NavLink to='/workspace4' className={({isActive}) => `rounded-xl p-1 cursor-pointer ${isActive ? "text-red-800" : "text-black"}`} > WorkSpace4 </NavLink>
             <NavLink to='/user' className={({isActive}) => `rounded-xl p-1 cursor-pointer ${isActive ? "text-red-800" : "text-black"}`} > User </NavLink>
         </div>
     </div>

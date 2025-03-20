@@ -25,6 +25,16 @@ function WorkSpace3() {
     setWidth(newWidth);
   }
 
+  const onPipeDragStart = (e) => {
+    // Prevent default drag image (Ghost image)
+    const ghostElement = document.createElement("div");
+    ghostElement.className = "hidden-drag"; // Add your Tailwind or CSS class
+    document.body.appendChild(ghostElement); // Add it to the DOM
+
+    e.dataTransfer.setDragImage(ghostElement, 0, 0); // Use it as the drag image
+  };
+
+
   const onPipeDrag = (e) => {
     e.preventDefault();
     const xAxisPos = e.clientX;
@@ -42,12 +52,16 @@ function WorkSpace3() {
         <div className=' flex flex-col items-center'>
             <h1 className=' mb-10'>Hi {userName}! You are welcomed to Workspace3.</h1>
             <div ref={boxRef} className=' w-1/2  flex  items-center'>
-              <div className='flex bg-gray-500 justify-start cursor-default rounded-md' style={{width: `${Math.round(width)}%`, padding: width<6 ? "0px" : "4px"}}>
+              <div className='flex bg-gray-500 justify-start cursor-default rounded-md' style={{width: `${width}%`, padding: width<6 ? "0px" : "4px"}}> 
+                {/* width: `${Math.round(width)}%` */}
                 <p className=' transition-all duration-200' style={{position: 'relative', bottom: width<6 ? "30px" : "0px"}}>Skill</p> 
                 <p className='ml-2 transition-all duration-200' style={{position: 'relative', top: width<10 ? "30px" : "0px"}}>{Math.round(width)}%</p>
               </div>
-              <div  draggable="true" onDrag={(e) => onPipeDrag(e)} className='relative bottom-0.5 cursor-grab text-3xl text-red-700 font-extrabold'>|</div>
-              <div className='flex bg-gray-700 justify-end cursor-default rounded-md' style={{width: `${Math.round(100-width)}%`, padding: width>87 ? "0px" : "4px"}}> 
+              {/* Draggable Pipe code starts. */}
+              <div draggable="true" onDragStart={(e) => onPipeDragStart(e)} onDrag={(e) => onPipeDrag(e)} className='relative bottom-0.5 cursor-grab text-3xl text-red-700 font-extrabold'>|</div>
+              {/* Draggable Pipe code ends. */}
+              <div className='flex bg-gray-700 justify-end cursor-default rounded-md' style={{width: `${100-width}%`, padding: width>87 ? "0px" : "4px"}}> 
+                {/* width: `${Math.round(100-width)}%` */}
                 <p className=' mr-2 transition-all duration-200' style={{position: 'relative', top: width>87 ? "30px" : "0px"}}>{Math.round(100-width)}%</p> 
                 <p className=' transition-all duration-200' style={{position: 'relative', bottom: width>92 ? "30px" : "0px"}}>Sonnet</p>
               </div>

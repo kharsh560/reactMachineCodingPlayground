@@ -10,6 +10,7 @@ import WorkSpace3 from './pages/workspace3/WorkSpace3.jsx'
 import User from './pages/user/User.jsx'
 import { Provider } from 'react-redux'
 import { store } from './appStore/store/store.js'
+import WorkSpace4 from './pages/workspace4/WorkSpace4.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -18,6 +19,7 @@ const router = createBrowserRouter(
       <Route path='workspace1' element={<WorkSpace1 />} />
       <Route path='workspace2' element={<WorkSpace2 />} />
       <Route path='workspace3' element={<WorkSpace3 />} />
+      <Route path='workspace4' element={<WorkSpace4 />} />
       <Route path='user' element={<User />} />
     </Route>
   )
