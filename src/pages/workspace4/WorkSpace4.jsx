@@ -24,11 +24,22 @@ const settingsInitialState = {
     font: "Calibiri"
 }
 
-function WorkSpace4() {
+function WorkSpace4({setFont, setFontSize}) {
     const [currentTab, setCurrentTab] = useState("Profile");
     const [profileStates, setProfileStates] = useState(profileInitialState);
     const [interestStates, setInterestStates] = useState(interestInitialState);
     const [settingsStates, setSettingsStates] = useState(settingsInitialState);
+
+    const setMasterFont = (e) => {
+        setSettingsStates((prev) => ({...prev, font: e.target.value}));
+        setFont(e.target.value);
+    }
+
+    const setMasterFontSize = (e) => {
+        console.log(e.target.value);
+        setSettingsStates((prev) => ({...prev, textSize: e.target.value}));
+        setFontSize(e.target.value);
+    }
 
 
     const innerContent = () => {
@@ -113,7 +124,7 @@ function WorkSpace4() {
                         </div>
                         <div>
                             <label>Text Size</label>
-                            <input type='number' className=' bg-amber-500 ml-2'  value={settingsStates.textSize} onChange={(e) => setSettingsStates((prev) => ({...prev, textSize: e.target.value}))}  />
+                            <input type='number' className=' bg-amber-500 ml-2'  value={settingsStates.textSize} onChange={(e) => setMasterFontSize(e)}  />
                         </div>
                         <div>
                             <label>Theme</label>
@@ -125,7 +136,8 @@ function WorkSpace4() {
                         </div>
                         <div>
                             <label>Font</label>
-                            <select className='bg-amber-500 ml-2'  value={settingsStates.font} onChange={(e) => setSettingsStates((prev) => ({...prev, font: e.target.value}))}>
+                            <select className='bg-amber-500 ml-2'  value={settingsStates.font} onChange={(e) => setMasterFont(e)}> 
+                                {/* setFont   setSettingsStates((prev) => ({...prev, font: e.target.value})) */}
                                 <option value="Calibri">Calibri</option>
                                 <option value="Times New Roman">Times New Roman</option>
                                 <option value="Algerian">Algerian</option>
